@@ -1,0 +1,83 @@
+.side-bar {
+    display: inline-block;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 10vw;
+    z-index: 1;
+}
+
+.side-bar .heartbeat {
+    margin-top: 20px;
+    top: 10px;
+    width: 50%;
+}
+
+.side-bar .tabs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+
+.side-bar .tabs .tab {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    height: 65px;
+    margin: 10px 0;
+    position: relative;
+    justify-content: center;
+}
+
+.side-bar .tabs .tab img {
+    height: 35px;
+    width: 35px;
+}
+
+.side-bar .tabs .tab .background {
+    height: 0;
+    position: absolute;
+    transition: 0.2s;
+    width: 0;
+}
+
+.side-bar .tabs .tab::after {
+    background-color: #7272ff;
+    border-radius: 20px;
+    content: '';
+    height: 0px;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    transition: 0.2s;
+    width: 5px;
+}
+
+.side-bar .tabs .tab.selected .background {
+    background-color: #4e63ff;
+    border-radius: 20px;
+    height: 65px;
+    margin: auto;
+    width: 65px;
+}
+
+.side-bar .tabs .tab.selected img {
+    filter: brightness(1000%);
+}
+
+.side-bar .tabs .tab.selected::after {
+    top: 4px;
+    height: 57px;
+}
+
+.side-bar .gear {
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 10vw;
+}
+
+.side-bar .gear img {
+    width: 30%;
+}

@@ -1,0 +1,37 @@
+.video-component {
+    position: absolute;
+    bottom: 140px;
+    left: 125px;
+    border-radius: 30px;
+    width: 65vw;
+    height: calc(85% - 150px);
+    overflow: hidden;
+}
+
+.video-component video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 65vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-component #primary-canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    width: 65vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-component #secondary-canvas {
+    display: none;
+}
+
+.video-component img {
+    display: none;
+    position: absolute;
+}

@@ -1,0 +1,111 @@
+.speech-detector {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 70vw;
+}
+
+.speech-detector .speech-content {
+    position: absolute;
+    left: 150px;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.speech-detector .speech-content h1 {
+    color: #9C9C9C;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.speech-detector .speech-content span {
+    color: #333333;
+}
+
+#visualizer {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100px;
+}
+
+#visualizer > div {
+    background-image: linear-gradient(270deg, #0761FF -53.27%, #b472ff 89.25%, #7272ff 139.44%);
+    background-size: 81px 65px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 200px;
+    width: 4px;
+    margin: 2px;
+    opacity: 1;
+    position: relative;
+}
+
+#visualizer > div::before {
+    position: absolute;
+    border-radius: 200px;
+    top: -2px;
+    left: -2px;
+    bottom: -2px;
+    right: -2px;
+    z-index: -1;
+    background: inherit;
+    background-clip: border-box;
+    filter: blur(2px);
+    clip-path: inset(0 round 200px);
+    content: '';
+}
+
+#visualizer div:nth-child(1) {
+    background-position-x: 0px;
+}
+
+#visualizer div:nth-child(2) {
+    background-position-x: -9px;
+}
+
+#visualizer div:nth-child(3) {
+    background-position-x: -18px;
+}
+
+#visualizer div:nth-child(4) {
+    background-position-x: -27px;
+}
+
+#visualizer div:nth-child(5) {
+    background-position-x: -36px;
+}
+
+#visualizer div:nth-child(6) {
+    background-position-x: -45px;
+}
+
+#visualizer div:nth-child(7) {
+    background-position-x: -54px;
+}
+
+#visualizer div:nth-child(8) {
+    background-position-x: -63px;
+}
+
+#visualizer div:nth-child(9) {
+    background-position-x: -72px;
+}
+
+#start-recording {
+    cursor: pointer;
+    border-radius: 14px;
+    width: 160px;
+    position: absolute;
+    bottom: 150px;
+    z-index: 100;
+    left: calc(32.5vw + 130px);
+    user-select: none;
+}

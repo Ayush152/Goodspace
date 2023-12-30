@@ -1,0 +1,57 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
+    "@passageidentity/passage-auth": "^0.1.0-beta.28",
+    "@passageidentity/passage-elements": "^1.17.0",
+    "@passageidentity/passage-react": "^0.7.1",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/react": "^14.1.2",
+    "@testing-library/user-event": "^14.5.1",
+    "antd": "^5.12.3",
+    "buffer": "^6.0.3",
+    "cwise": "^1.0.10",
+    "face-api.js": "^0.22.2",
+    "ndarray": "^1.0.19",
+    "ndarray-fft": "^1.0.3",
+    "ndarray-linear-interpolate": "^1.0.0",
+    "ndarray-linspace": "^2.0.3",
+    "ndarray-ops": "^1.2.2",
+    "react": "^18.2.0",
+    "react-charts": "^2.0.0-beta.7",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.21.0",
+    "react-scripts": "5.0.1",
+    "react-speech-recognition": "^3.10.0",
+    "react-webcam": "^7.2.0",
+    "threebox-plugin": "^2.2.7",
+    "web-vitals": "^3.5.0",
+    "zeros": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
